@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Relax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #E3C6A8;">
+        <div class="container">
+            <a class="navbar-brand" href="#accueil">MR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#regles">Nos règles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Nos services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipe">Notre équipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tarifs">Nos tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#abonnements">Nos abonnements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Nous joindre</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Accueil -->
+    <section id="accueil" class="section bg-light py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold">Bienvenue chez <strong>Master Relax</strong>, votre oasis de détente ultime !</h1>
+            <p class="lead">Découvrez une expérience de massage inégalée, un sauna apaisant et bien plus.</p>
+            
+            <div class="row my-4">
+                <div class="col-md-4">
+                    <img src="images/image_21.png" class="img-fluid rounded shadow-sm" alt="Massage suédois">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/image_20.png" class="img-fluid rounded shadow-sm" alt="Massage suédois">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/image_22.png" class="img-fluid rounded shadow-sm" alt="Massage suédois">
+                </div>
+            </div>
+            
+            <p class="text-justify">Nous sommes ravis de vous accueillir sur notre site web, où vous découvrirez une expérience de massage inégalée, un sauna apaisant et bien d'autres services qui combleront vos besoins de relaxation.
+            Chez Master Relax, nous croyons fermement en l'importance de prendre soin de soi et de se déconnecter du stress de la vie quotidienne. Notre équipe de thérapeutes expérimentés et attentionnés est dédiée à vous offrir une expérience de massage personnalisée et exceptionnelle, adaptée à vos besoins spécifiques.</p>
+            
+            <div class="row my-4">
+                <div class="col-md-4">
+                    <img src="images/image_23.png" class="img-fluid rounded shadow-sm" alt="Massage suédois">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/image_24.png" class="img-fluid rounded shadow-sm" alt="Massage suédois">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/image_25.png" class="img-fluid rounded shadow-sm" alt="Massage suédois">
+                </div>
+            </div>
+            
+            <p class="text-justify">Nous proposons une gamme variée de massages, allant des techniques classiques telles que le massage suédois et le massage thaïlandais aux approches plus spécialisées comme le massage des tissus profonds, le massage aux pierres chaudes et le massage sportif.</p>
+            
+            <div class="row my-4">
+                <div class="col-md-4">
+                    <img src="images/image_26.png" class="img-fluid rounded shadow-sm" alt="Massage suédois">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/image_27.png" class="img-fluid rounded shadow-sm" alt="Massage suédois">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/image_28.png" class="img-fluid rounded shadow-sm" alt="Massage suédois">
+                </div>
+            </div>
+            
+            <p class="text-justify">En plus de nos services de massage et de sauna, nous proposons également d'autres traitements et services pour vous dorloter davantage. Parmi nos offres complémentaires, vous trouverez des soins du visage revitalisants, des enveloppements corporels nourrissants, des séances de réflexologie apaisantes et bien d'autres encore.</p>
+            
+            <button class="btn btn-primary btn-lg mt-4 appointmentButton">Prendre rendez-vous</button>
+        </div>
+    </section>
+    
+
+    <!-- Pop-up Prise de rendez-vous -->
+    <div id="appointmentPopup" class="popup">
+        <div class="popup-content position-relative">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <iframe src="appointment.html" width="100%" height="100%" style="border:none;"></iframe>
+        </div>
+    </div>
+
+    <!-- Nos règles -->
+    <section id="regles" class="section bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nos règles</h2>
+            <div class="card mx-auto p-4 shadow-sm" style="max-width: 800px; background-color: #E3C6A8; border-radius: 10px;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;">1. Respecter l'heure du rendez-vous. Tout retard pourrait réduire la durée de votre séance.</li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;">2. Annulation minimum 24 heures à l'avance pour éviter des frais.</li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;">3. Les téléphones doivent être mis en mode silencieux dans l'établissement.</li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;">4. Hygiène corporelle requise avant chaque séance.</li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;">5. Interdiction formelle d'usage de substances illicites ou alcoolisées avant et pendant la séance.</li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;">6. Respect mutuel envers le personnel et les autres clients exigé.</li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;">7. Toute demande inappropriée entraînera l'arrêt immédiat du service sans remboursement.</li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;">8. Les paiements doivent être effectués avant la séance, sauf arrangement particulier.</li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;">9. Les séances sont strictement professionnelles et thérapeutiques.</li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;">10. L'établissement se réserve le droit de refuser un client en cas de non-respect des règles.</li>
+                </ul>
+            </div>
+
+            <button class="btn btn-primary btn-lg mt-4 appointmentButton">Prendre rendez-vous</button>
+        </div>
+    </section>
+
+    <!-- Pop-up Prise de rendez-vous -->
+    <div id="appointmentPopup" class="popup">
+        <div class="popup-content position-relative">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <iframe src="appointment.html" width="100%" height="100%" style="border:none;"></iframe>
+        </div>
+    </div>
+
+    <!-- Nos services -->
+    <section id="services" class="section bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nos services</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/massage_suedois.png" class="card-img-top" alt="Massage suédois">
+                        <div class="card-body">
+                            <h5 class="card-title">Massage suédois</h5>
+                            <p class="card-text">Le massage suédois est l’un des types de massage les plus populaires. Il utilise des mouvements de pétrissage, d’effleurage, de friction et de tapotement pour détendre les muscles, améliorer la circulation sanguine et favoriser la relaxation globale du corps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/massage_pierres.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Massage aux pierres chaudes</h5>
+                            <p class="card-text">Ce massage utilise des pierres lisses et chauffées, placées sur certaines parties du corps, combinées à des techniques de massage traditionnelles. Les pierres chaudes aident à détendre les muscles tendus, à améliorer la circulation sanguine et à favoriser une relaxation profonde.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/massage_tissus.png" class="card-img-top" alt="Massage des tissus profonds">
+                        <div class="card-body">
+                            <h5 class="card-title">Massage des tissus profonds</h5>
+                            <p class="card-text">Ce type de massage cible les couches profondes des muscles et des tissus conjonctifs. Les thérapeutes utilisent des techniques plus intenses pour relâcher les tensions chroniques, les adhérences musculaires et améliorer la mobilité.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/massage_thaïlandais.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Massage thaïlandais</h5>
+                            <p class="card-text">Le massage thaïlandais est une technique qui combine des étirements, des pressions et des mouvements rythmiques pour stimuler l'énergie du corps. Le thérapeute guide le client à travers différentes positions corporelles pour favoriser la flexibilité, la relaxation et l'équilibre énergétique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/massage_sportif.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Massage sportif</h5>
+                            <p class="card-text">Le massage sportif est spécifiquement conçu pour les sportifs et les athlètes. Il peut inclure des techniques de massage suédois, des étirements, des frictions et des manipulations articulaires pour soulager les tensions musculaires, prévenir les blessures et améliorer la performance sportive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/massage_aux_huiles.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Massage aux huiles essentielles</h5>
+                            <p class="card-text">Ce massage intègre l'utilisation d'huiles essentielles aromatiques pour améliorer les bienfaits du massage. Les huiles essentielles sont sélectionnées en fonction des besoins spécifiques du client, offrant une expérience sensorielle apaisante et revitalisante.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/massage_prenatal.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Massage pré-natal</h5>
+                            <p class="card-text">Ce type de massage est destiné aux femmes enceintes. Il est adapté pour répondre aux besoins spécifiques du corps en transformation pendant la grossesse, en soulageant les douleurs lombaires, les tensions musculaires et en favorisant la relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/massage_aux_bougies.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Massage aux bougies</h5>
+                            <p class="card-text">Ce massage utilise des bougies de massage spéciales, composées de cires végétales et d'huiles essentielles. Les bougies sont allumées et la cire fondue est utilisée pour masser le corps, offrant une expérience relaxante et nourrissante pour la peau.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/massage_aux_bambous.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Massage aux bambous</h5>
+                            <p class="card-text">Ce massage utilise des bâtons de bambou pour appliquer des pressions et des mouvements spécifiques sur le corps. Les bâtons de bambou aident à relâcher les tensions musculaires, à stimuler la circulation et à promouvoir une sensation de bien-être.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/bains.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Bains</h5>
+                            <p class="card-text">Ces bains aident à détendre les muscles, à apaiser l'esprit et à favoriser une relaxation profonde.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/saunas.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Saunas</h5>
+                            <p class="card-text">Les séances de sauna aident à éliminer les toxines, à améliorer la circulation sanguine et à détendre les muscles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/hamman.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Hammam</h5>
+                            <p class="card-text">Le hammam, également connu sous le nom de bain turc, est un bain de vapeur qui offre une expérience de purification et de détente. Il implique l'utilisation de vapeur chaude et d'exfoliation pour nettoyer la peau, ouvrir les pores et stimuler la circulation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/soins_du_corps.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Soins du corps</h5>
+                            <p class="card-text">Ces traitements peuvent revitaliser la peau, laisser une sensation de douceur et améliorer l'apparence générale de la peau.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/reflexologie.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Réflexologie</h5>
+                            <p class="card-text">La réflexologie est une technique qui se concentre sur la stimulation des points réflexes des pieds, des mains ou des oreilles pour favoriser la guérison, l'équilibre énergétique et la relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/soins_du_visage.png" class="card-img-top" alt="Massage aux pierres chaudes">
+                        <div class="card-body">
+                            <h5 class="card-title">Soins du visage</h5>
+                            <p class="card-text">Ces soins peuvent inclure le nettoyage, l'exfoliation, l'application de masques, les massages du visage et l'hydratation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary btn-lg mt-4 appointmentButton">Prendre rendez-vous</button>
+    </section>
+
+    <!-- Notre équipe -->
+    <section id="equipe" class="section bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Notre équipe</h2>
+            <div class="row text-center justify-content-center">
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="images/francois.png" class="rounded-circle mx-auto d-block" style="width: 150px; height: 150px;" alt="François">
+                        <div class="card-body">
+                            <h5 class="card-title">François</h5>
+                            <p class="card-text">Spécialiste des massages suédois</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="images/emilie.png" class="rounded-circle mx-auto d-block" style="width: 150px; height: 150px;" alt="Émilie">
+                        <div class="card-body">
+                            <h5 class="card-title">Émilie</h5>
+                            <p class="card-text">Spécialiste des massages aux huiles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="images/guillaume.png" class="rounded-circle mx-auto d-block" style="width: 150px; height: 150px;" alt="Guillaume">
+                        <div class="card-body">
+                            <h5 class="card-title">Guillaume</h5>
+                            <p class="card-text">Spécialiste des massages sportifs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="images/alex.png" class="rounded-circle mx-auto d-block" style="width: 150px; height: 150px;" alt="Guillaume">
+                        <div class="card-body">
+                            <h5 class="card-title">Alex</h5>
+                            <p class="card-text">Spécialiste des massages aux bambous</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="images/Imani.png" class="rounded-circle mx-auto d-block" style="width: 150px; height: 150px;" alt="Guillaume">
+                        <div class="card-body">
+                            <h5 class="card-title">Imani</h5>
+                            <p class="card-text">Spécialiste des massages pré-nataux</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="images/carene.png" class="rounded-circle mx-auto d-block" style="width: 150px; height: 150px;" alt="Guillaume">
+                        <div class="card-body">
+                            <h5 class="card-title">Imani</h5>
+                            <p class="card-text">Spécialiste des soins du visage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary btn-lg mt-4 appointmentButton">Prendre rendez-vous</button>
+    </section>
+
+    <!-- Nos tarifs -->
+    <section id="tarifs" class="section bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nos tarifs</h2>
+            <div class="card mx-auto p-4 shadow-sm" style="max-width: 800px; background-color: #E3C6A8; border-radius: 10px;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Massage suédois :</strong>
+                        <ul>
+                            <li>60 minutes : 150 $ - 200 $</li>
+                            <li>90 minutes : 200 $ - 250 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Massage aux pierres chaudes :</strong>
+                        <ul>
+                            <li>60 minutes : 170 $ - 220 $</li>
+                            <li>90 minutes : 220 $ - 270 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Massage des tissus profonds :</strong>
+                        <ul>
+                            <li>60 minutes : 160 $ - 210 $</li>
+                            <li>90 minutes : 210 $ - 260 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Massage thaïlandais :</strong>
+                        <ul>
+                            <li>60 minutes : 180 $ - 230 $</li>
+                            <li>90 minutes : 230 $ - 280 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Massage aux huiles essentielles :</strong>
+                        <ul>
+                            <li>60 minutes : 160 $ - 210 $</li>
+                            <li>90 minutes : 210 $ - 260 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Massage sportif :</strong>
+                        <ul>
+                            <li>60 minutes : 170 $ - 220 $</li>
+                            <li>90 minutes : 220 $ - 270 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Massage aux huiles essentielles :</strong>
+                        <ul>
+                            <li>60 minutes : 150 $ - 200 $</li>
+                            <li>90 minutes : 200 $ - 250 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Massage des pieds (réflexologie) :</strong>
+                        <ul>
+                            <li>60 minutes : 140 $ - 190 $</li>
+                            <li>90 minutes : 190 $ - 240 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Massage prénatal :</strong>
+                        <ul>
+                            <li>60 minutes : 160 $ - 210 $</li>
+                            <li>90 minutes : 210 $ - 260 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Massage aux bougies :</strong>
+                        <ul>
+                            <li>60 minutes : 160 $ - 210 $</li>
+                            <li>90 minutes : 210 $ - 260 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Massage aux bambous :</strong>
+                        <ul>
+                            <li>60 minutes : 150 $ - 200 $</li>
+                            <li>90 minutes : 200 $ - 250 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Soins du corps :</strong>
+                        <ul>
+                            <li>60 minutes : 250 $ - 400 $</li>
+                            <li>90 minutes : 300 $ - 500 $</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item border-0" style="background-color: #E3C6A8; text-align: justify;"><strong>Soins du corps :</strong>
+                        <ul>
+                            <li>60 minutes : 275 $ - 350 $</li>
+                            <li>90 minutes : 300 $ - 450 $</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="text-center mt-3"><em>N.B. : Les tarifs ci-haut sont fixés en fonction du type de massage et du thérapeute. Ils peuvent être sujets à des réductions ou à des promotions.</em></p>
+            </div>
+        </div>
+
+        <button class="btn btn-primary btn-lg mt-4 appointmentButton">Prendre rendez-vous</button>
+    </section>
+       
+
+    <!-- Nos abonnements -->
+    <section id="abonnements" class="section bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nos abonnements</h2>
+            <div class="card mx-auto p-4 shadow-sm" style="max-width: 800px; background-color: #E3C6A8; border-radius: 10px;">
+                <p class="text-center"><strong>Des offres exclusives pour nos membres.</strong></p>
+                <h4><strong>Formule Relax Classique</strong></h4>
+                <p>Vous donne accès aux douches. Vous pouvez choisir un massage par séance selon votre admissibilité. Cependant, vous devez faire une réservation. Tout cela dans nos heures d’ouverture de lundi au vendredi. Veuillez noter que cette formule n’est pas partageable.</p>
+                
+                <h4><strong>Formule Relax Premium</strong></h4>
+                <p>Vous donne accès aux douches. Vous pouvez choisir jusqu’à deux massages différents par séance selon votre admissibilité. Cependant, vous devez faire une réservation. Tout cela dans nos heures d’ouverture du lundi au vendredi. Vous pouvez partager votre formule avec votre conjoint.</p>
+                
+                <h4><strong>Formule Relax Élite</strong></h4>
+                <p>Vous donne accès aux douches et à notre gamme de bains. Vous pouvez choisir jusqu’à trois massages différents par séance selon votre admissibilité. Vous n’avez pas besoin de réservation. Et vous pouvez partager votre abonnement avec trois autres personnes.</p>
+                
+                <h4><strong>Formule Relax Gold</strong></h4>
+                <p>Vous donne accès aux douches, à notre gamme de bains, aux saunas. Vous pouvez choisir jusqu’à cinq massages différents par séance d’une heure par catégorie selon votre admissibilité. Vous n’avez pas besoin de réservation et vous pouvez jouir de nos services même les fins de semaine. Et vous pouvez partager votre abonnement avec cinq autres personnes.</p>
+            </div>
+        </div>
+
+        <button class="btn btn-primary btn-lg mt-4 appointmentButton">Prendre rendez-vous</button>
+    </section>
+
+    <!-- Nous joindre -->
+    <section id="contact" class="section bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Nous joindre</h2>
+            <div class="d-flex flex-column align-items-center">
+                <p class="fs-5 text-center"><strong>Adresse :</strong> #4-600 boulevard Fournier, Gatineau, J4X 1C5</p>
+                <p class="fs-5 text-center"><strong>Téléphone :</strong> 819-107-5635 / 819-230-9824</p>
+                <p class="fs-5 text-center"><strong>Email :</strong> <a href="mailto:services@master.relax.mr" class="text-dark">services@master.relax.mr</a></p>
+                <p class="mt-4 fs-5 text-center">Suivez-nous sur les réseaux sociaux</p>
+                <div class="d-flex justify-content-center gap-3 mt-2">
+                    <a href="#" class="text-dark">
+                        <img src="images/facebook.png" alt="Facebook" width="40" height="40">
+                    </a>
+                    <a href="#" class="text-dark">
+                        <img src="images/instagram.png" alt="Instagram" width="40" height="40">
+                    </a>
+                    <a href="#" class="text-dark">
+                        <img src="images/tiktok.png" alt="TikTok" width="40" height="40">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light py-3 mt-5">
+        <div class="container d-flex justify-content-between">
+            <span>&copy; 2025 - Master Relax - <a href="https://www.masterrelax.ca">www.masterrelax.ca</a></span>
+            <span>
+                <a href="#">Politique de confidentialité</a> | 
+                <a href="#">Avis</a> | 
+                <a href="#">FAQ</a>
+            </span>
+        </div>
+    </footer>
+
+    <!-- Script Bootstrap & JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
