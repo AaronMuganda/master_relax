@@ -11,14 +11,43 @@
     <div class="container mt-5">
         <h2 class="text-center">Prendre Rendez-vous</h2>
         <form action="confirmation.html" method="POST" class="mt-4">
+            <!-- Prénom -->
+            <div class="mb-3">
+                <label for="prenom" class="form-label">Prénom</label>
+                <input type="text" id="prenom" name="prenom" class="form-control" required>
+            </div>
+
+            <!-- Nom -->
+            <div class="mb-3">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" id="nom" name="nom" class="form-control" required>
+            </div>
+
+            <!-- Adresse courriel -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Adresse courriel</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <!-- Numéro de téléphone -->
+            <div class="mb-3">
+                <label for="telephone" class="form-label">Numéro de téléphone</label>
+                <input type="tel" id="telephone" name="telephone" class="form-control" required>
+            </div>
+
+            <!-- Date -->
             <div class="mb-3">
                 <label for="date" class="form-label">Date</label>
                 <input type="date" id="date" name="date" class="form-control" required>
             </div>
+
+            <!-- Heure -->
             <div class="mb-3">
                 <label for="heure" class="form-label">Heure</label>
                 <input type="time" id="heure" name="heure" class="form-control" required>
             </div>
+
+            <!-- Durée -->
             <div class="mb-3">
                 <label for="duree" class="form-label">Durée</label>
                 <select id="duree" name="duree" class="form-select" required>
@@ -26,31 +55,49 @@
                     <option value="90">90 minutes</option>
                 </select>
             </div>
+
+            <!-- Service -->
             <div class="mb-3">
                 <label for="service" class="form-label">Service</label>
                 <select id="service" name="service" class="form-select" required>
                     <option value="massage_suedois">Massage Suédois</option>
                     <option value="pierres_chaudes">Massage aux Pierres Chaudes</option>
                     <option value="tissus_profonds">Massage des Tissus Profonds</option>
-                    <option value="massage_suedois">Massage thaïlandais</option>
-                    <option value="pierres_chaudes">Massage aux huiles essentielles</option>
-                    <option value="tissus_profonds">Massage sportif</option>
-                    <option value="tissus_profonds">Massage pré-natal</option>
-                    <option value="massage_suedois">Massage aux bougies</option>
-                    <option value="pierres_chaudes">Massage aux bambous</option>
-                    <option value="tissus_profonds">Soins du corps</option>
-                    <option value="pierres_chaudes">Soins du visage</option>
-                    <option value="tissus_profonds">Réflexologie</option>
+                    <option value="massage_thailandais">Massage thaïlandais</option>
+                    <option value="huiles_essentielles">Massage aux huiles essentielles</option>
+                    <option value="massage_sportif">Massage sportif</option>
+                    <option value="massage_prenatal">Massage pré-natal</option>
+                    <option value="massage_bougies">Massage aux bougies</option>
+                    <option value="massage_bambous">Massage aux bambous</option>
+                    <option value="soins_corps">Soins du corps</option>
+                    <option value="soins_visage">Soins du visage</option>
+                    <option value="reflexologie">Réflexologie</option>
                 </select>
             </div>
+
+            <!-- Employé -->
             <div class="mb-3">
                 <label for="employe" class="form-label">Employé</label>
                 <select id="employe" name="employe" class="form-select" required>
+                    <option value="francois">Alex</option>
+                    <option value="emilie">Carène</option>
+                    <option value="guillaume">Émilie</option>
                     <option value="francois">François</option>
-                    <option value="emilie">Émilie</option>
-                    <option value="guillaume">Guillaume</option>
+                    <option value="emilie">Guillaume</option>
+                    <option value="guillaume">Imani</option>
                 </select>
             </div>
+
+            <!-- Réservation (Seul / En couple) -->
+            <div class="mb-3">
+                <label for="reservation" class="form-label">Réservation</label>
+                <select id="reservation" name="reservation" class="form-select" required>
+                    <option value="seul">Seul</option>
+                    <option value="couple">En couple (-25% de réduction)</option>
+                </select>
+            </div>
+
+            <!-- Bouton de confirmation -->
             <button type="submit" class="btn btn-primary confirmButton w-100">Confirmer le rendez-vous</button>
         </form>
     </div>
@@ -58,3 +105,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
